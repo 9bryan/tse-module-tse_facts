@@ -2,11 +2,11 @@ Facter.add('datacenter') do
   setcode do
     domain = Facter.value('domain')
     case domain
-    when 'inf.puppetlabs.demo' 
+    when 'inf.puppet.vm' 
       'infrastructure'
-    when 'syd.puppetlabs.demo'
+    when 'syd.puppet.vm'
       'sydney'
-    when 'pdx.puppetlabs.demo'
+    when 'pdx.puppet.vm'
       'portland'
     else
       'unknown'
